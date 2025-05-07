@@ -1,0 +1,263 @@
+/* Général */
+.scaleX-n1-rtl {
+  transform: scaleX(1);
+}
+
+.feature-item img {
+  width: 20px;
+  height: auto;
+}
+
+.button-wrapper {
+  margin-top: auto;
+}
+
+.pricing-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  animation: floatIcon 2s ease-in-out infinite; /* Animation de flottement */
+}
+
+/* Liste des caractéristiques */
+.pricing-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: visible;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s; /* Délai d'animation pour les cartes */
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Zoom et survol */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.pricing-card.featured {
+  border: 2px solid #0d6efd;
+  
+}
+
+/* Bouton */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  justify-content: center;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.g-4, .gx-4 {
+  --bs-gutter-x: 1.5rem;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* ==== TITRES & TEXTES ==== */
+
+.section-icon {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  animation: floatIcon 2s ease-in-out infinite;
+}
+
+.gradient-text {
+  font-weight: bold;
+  color: #0d6efd;
+  animation: slideText 5s linear infinite; /* Ajout d'animation de défilement */
+}
+
+.pricing-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  animation: floatIcon 2s ease-in-out infinite; /* Animation de flottement */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--bs-card-bg, white);
+  color: var(--bs-body-color, #000);
+  border-radius: var(--bs-card-border-radius, 0.25rem);
+  word-wrap: break-word;
+  position: relative;
+}
+
+
+
+.card {
+  padding: 2em;
+}
+
+.border-primary {
+  --bs-border-opacity: 1;
+  border-color: rgb(255 255 255) !important;
+}
+/* Titre flottant */
+.floating-title {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  animation: float 3s ease-in-out infinite, rotate 5s linear infinite; /* Animation de flottement et rotation */
+}
+
+.plan-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0d6efd;
+  justify-content: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  animation: float 6s ease-in-out infinite;
+  margin-top: -50px;
+}
+/* ==== PRIX ==== */
+.price-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+  
+}
+
+.currency {
+  position: relative;
+  top: -20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #0d6efd;
+  
+}
+
+.period {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* ==== FONCTIONNALITÉS ==== */
+
+.feature-list {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards; /* Animation d'apparition */
+}
+
+.feature-item:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+.feature-item:nth-child(odd) {
+  animation-delay: 0.6s;
+}
+
+.arrow-icon {
+  color: #0d6efd;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+
+/* ==== ANIMATIONS ==== */
+
+/* Animation de rotation pour le titre flottant */
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0) rotate(360deg);
+  }
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation de défilement du texte gradient */
+@keyframes slideText {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* Animation de flottement pour l'icône */
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .pricing-card {
+    margin-top: 4rem;
+  }
+}
+
