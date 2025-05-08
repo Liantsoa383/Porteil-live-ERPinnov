@@ -15,6 +15,8 @@
     <link href="css/naveBare.css" rel="stylesheet">
     <link href="css/sectionModule.css" rel="stylesheet">
     <link rel="stylesheet" href="css/Pricing.css">
+    <link rel="stylesheet" href="css/FaqSection.css">
+    <link rel="stylesheet" href="css/footer-section.css">
     
 </head>
 <body>
@@ -230,9 +232,9 @@
 </section>
 
 <!-- pricingPage -->
-<section id="landingPricing" class="pricing-section">
+<section id="landingPricing" class="pricing-section" style="padding-top: 120px;">
     <div class="container">
-      <h2 class="section-icon text-center">
+      <h2 class=" text-center">
         <img src="assets/img/front-pages/icons/section-tilte-icon.png" alt="section icon" class="icon" />
         <span class="text-uppercase">Nos offres</span>
       </h2>
@@ -254,28 +256,256 @@
       </div>
     </div>
   </section>
-  <script src="js/pricing.js"></script>
-
-       
-        <!-- Section landingGestion -->
-        <section id="landingGestion" class="my-5 container">
-            <h2>Gestion</h2>
-            <p>Cette section sera complétée avec votre contenu de gestion</p>
-        </section>
        
         <!-- Section landingFAQ -->
-        <section id="landingFAQ" class="my-5 container">
-            <h2>Foire aux questions</h2>
-            <p>Cette section sera complétée avec votre contenu FAQ</p>
-        </section>
+        <section id="landingFAQ" class="section-py bg-body landing-faq" style="padding-top: 120px;">
+          <div class="container bg-icon-right">
+              <!-- Section Header -->
+              <h2 class="text-center d-flex justify-content-center align-items-center mb-2">
+                  <img src="assets/img/front-pages/icons/section-tilte-icon.png" 
+                      alt="section title icon" 
+                      class="me-3" />
+                  <span class="text-uppercase">Questions fréquentes</span>
+              </h2>
+  
+              <h5 class="text-center mb-2">
+                  <span class="display-5 fs-4 fw-bold">Les réponses à vos questions</span>
+              </h5>
+  
+              <p class="text-center fw-medium mb-4 mb-md-12 pb-4">
+                  Découvrez les réponses aux questions les plus fréquentes sur notre solution ERP
+              </p>
+  
+              <div class="row gy-5">
+                  <!-- Image Column -->
+                  <div class="col-lg-5">
+                      <div class="text-center">
+                          <img src="assets/img/front-pages/landing-page/sitting-girl-with-laptop.png" 
+                              alt="sitting girl with laptop" 
+                              class="faq-image scaleX-n1-rtl" />
+                      </div>
+                  </div>
+  
+                  <!-- FAQ Accordion -->
+                  <div class="col-lg-7">
+                      <div class="accordion" id="accordionFront">
+                          <!-- FAQ Item 1 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="head-One">
+                                  <button type="button" 
+                                      class="accordion-button collapsed" 
+                                      data-bs-toggle="collapse" 
+                                      data-bs-target="#accordionOne">
+                                      Qu'est-ce qu'un ERP SaaS ?
+                                  </button>
+                              </h2>
+                              <div id="accordionOne" 
+                                  class="accordion-collapse collapse" 
+                                  data-bs-parent="#accordionFront">
+                                  <div class="accordion-body">
+                                      Un ERP SaaS (Software as a Service) est une solution de gestion d'entreprise accessible via internet. Notre solution vous permet de gérer l'ensemble de votre activité (clients, stocks, facturation, comptabilité) sans installation logicielle, avec une simple connexion internet.
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <!-- FAQ Item 2 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="head-Two">
+                                  <button type="button" 
+                                      class="accordion-button" 
+                                      data-bs-toggle="collapse" 
+                                      data-bs-target="#accordionTwo">
+                                      Comment débuter avec ERPINNOV ?
+                                  </button>
+                              </h2>
+                              <div id="accordionTwo" 
+                                  class="accordion-collapse collapse show" 
+                                  data-bs-parent="#accordionFront">
+                                  <div class="accordion-body">
+                                      Il suffit de créer un compte gratuit pour commencer. Vous aurez accès à tous les modules de base immédiatement. Notre équipe vous accompagne dans la prise en main avec une formation initiale et une documentation complète.
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <!-- FAQ Item 3 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="head-Three">
+                                  <button type="button" 
+                                      class="accordion-button collapsed" 
+                                      data-bs-toggle="collapse" 
+                                      data-bs-target="#accordionThree">
+                                      Mes données sont-elles sécurisées ?
+                                  </button>
+                              </h2>
+                              <div id="accordionThree" 
+                                  class="accordion-collapse collapse" 
+                                  data-bs-parent="#accordionFront">
+                                  <div class="accordion-body">
+                                      La sécurité est notre priorité. Vos données sont hébergées en France, sauvegardées quotidiennement et protégées par un chiffrement avancé. Nous respectons strictement le RGPD et garantissons la confidentialité de vos informations.
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <!-- FAQ Item 4 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="head-Four">
+                                  <button type="button" 
+                                      class="accordion-button collapsed" 
+                                      data-bs-toggle="collapse" 
+                                      data-bs-target="#accordionFour">
+                                      Puis-je changer d'offre à tout moment ?
+                                  </button>
+                              </h2>
+                              <div id="accordionFour" 
+                                  class="accordion-collapse collapse" 
+                                  data-bs-parent="#accordionFront">
+                                  <div class="accordion-body">
+                                      Oui, vous pouvez facilement upgrader ou downgrader votre abonnement à tout moment. Vos données sont conservées et vous ne payez que la différence de prix au prorata temporis.
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <!-- FAQ Item 5 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="head-Five">
+                                  <button type="button" 
+                                      class="accordion-button collapsed" 
+                                      data-bs-toggle="collapse" 
+                                      data-bs-target="#accordionFive">
+                                      Quel support est inclus ?
+                                  </button>
+                              </h2>
+                              <div id="accordionFive" 
+                                  class="accordion-collapse collapse" 
+                                  data-bs-parent="#accordionFront">
+                                  <div class="accordion-body">
+                                      Chaque offre inclut un niveau de support adapté. De l'assistance par email pour l'offre Solo au support prioritaire avec accompagnement personnalisé pour l'offre Premium. Notre équipe technique est basée à Madagascar et disponible pour vous aider.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
     </main>
 
-    <!-- Pied de page -->
-    <footer class="bg-dark text-white p-3">
-        <div class="container">
-            <p class="text-center">&copy; 2025 Porteil-liveERPinnov. Tous droits réservés.</p>
-        </div>
-    </footer>
+      <section>
+        <footer class="landing-footer" id="footer">
+            <!-- Footer Top -->
+            <div class="footer-top position-relative overflow-hidden" style="padding-top:8%; width: 100%;">
+                <div class="container position-relative">
+                    <div class="row gx-0 gy-7 gx-sm-6 gx-lg-12">
+                        <!-- Logo et Newsletter -->
+                        <div class="col-lg-5 d-flex flex-column">
+                            <a href="/" class="app-brand-link mb-6">
+                                <span class="app-brand-logo demo me-2">
+                                    <!-- Logo -->
+                                </span>
+                                <span class="app-brand-text demo footer-link fw-semibold ms-1">ERP INNOV</span>
+                            </a>
+
+                            <p class="footer-text footer-logo-description mb-6">
+                                ERP Innov: La Gestion Intelligente à Portée de Main. Simplifiez, Innovez, Prospérez.
+                            </p>
+
+                            <!-- Contact en bas -->
+                            <ul class="list-unstyled mt-auto">
+                                <li class="mb-4">
+                                    <a href="mailto:contact@erpinnov.com" class="footer-link">contact@erpinnov.com</a>
+                                </li>
+                            </ul>
+                            <form id="newsletter-form">
+                                <div class="d-flex mt-2 gap-4">
+                                    <div class="form-floating form-floating-outline w-px-250">
+                                        <input 
+                                            type="email"
+                                            class="form-control bg-transparent rounded-3"
+                                            id="newsletter-1"
+                                            placeholder="Votre email" 
+                                        />
+                                        <label for="newsletter-1">S'inscrire à la newsletter</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Rester informé</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Menu ERP INNOV -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <h6 class="footer-title mb-4 mb-lg-6">ERP INNOV</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-4">
+                                    <a href="#landingFeatures" class="footer-link">Fonctionnalités</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#landingPricing" class="footer-link">Tarifs</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#landingFAQ" class="footer-link">FAQ</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#landingContact" class="footer-link">Contact</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="/demo" class="footer-link">Démonstration</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Menu Légal -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <h6 class="footer-title mb-4 mb-lg-6">Légal</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-4">
+                                    <a href="/confidentialite" class="footer-link">Confidentialité</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="/cgv" class="footer-link">CGV</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="/connexion" class="footer-link">Connexion</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="col-lg-3 col-md-4">
+                            <h6 class="footer-title mb-4 mb-lg-6">Contact</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-4">
+                                    <i class="me-2 ri-map-pin-line"></i>
+                                    <span class="footer-text">Madagascar</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom py-5">
+                <div class="container d-flex flex-wrap justify-content-between">
+                    <div class="mb-2 mb-md-0">
+                        <span class="footer-text">© <span id="current-year"></span> ERP INNOV. Tous droits réservés. </span>
+                        <span class="footer-text">Mentions légales</span>
+                    </div>
+                    <div>
+                        <a href="#" class="footer-link me-4" target="_blank" rel="noreferrer">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="#" class="footer-link me-4" target="_blank" rel="noreferrer">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="footer-link me-4" target="_blank" rel="noreferrer">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -284,6 +514,9 @@
     <script src="js/main.js"></script>
     <script src="js/hero-section.js"></script>
     <script src="js/sectionModule.js"></script>
+    <script src="js/pricing.js"></script>
+    <script src=" js/princing.js"></script>
+    <script src="footer-section.js"></script>
 
 </body>
 </html>
